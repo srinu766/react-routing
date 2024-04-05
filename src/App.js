@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -7,7 +7,7 @@ import Help from './pages/Help';
 
 const App = () => {
   return (
-   
+    <BrowserRouter basename="/myapp">
       <div>
         <nav>
           <ul>
@@ -33,6 +33,7 @@ const App = () => {
     
     </Routes>
     </div>
+        </BrowserRouter>
   );
 };
 
