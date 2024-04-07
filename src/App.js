@@ -7,7 +7,7 @@ import Help from './pages/Help';
 
 const App = () => {
   return (
-    <BrowserRouter basename="/myapp">
+    <BrowserRouter >
       <div>
         <nav>
           <ul>
